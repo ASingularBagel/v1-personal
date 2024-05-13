@@ -21,10 +21,10 @@ const Menu = () => {
     children={
         <div className='fixed text-left p-12 bg-stone-950 h-screen w-full z-30'>
             <div className='absolute bottom-24 flex flex-col'>
-                <Link to={'/blog'}
+                <Link to={'/contact'}
                 className='text-2xl font-bold text-white mb-4'
                 >
-                    Blog
+                    Contact
                 </Link>
                 <Link to={'/projects'}
                 className='text-2xl font-bold text-white mb-4'

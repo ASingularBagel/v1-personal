@@ -26,7 +26,9 @@ const Contact = () => {
         <Content 
         children = {
           <>
-            Contact information goes here !
+            <h1>Currently building !</h1>
+            <h1>You can email me at contactme@bbagel.mozmail.com</h1>
+            <h1>or shoot me a message through discord @twowholebagels</h1>
           </>
         }
         />

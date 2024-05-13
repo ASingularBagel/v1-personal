@@ -4,7 +4,6 @@ import { useEffect } from 'react';
 import Content from '@components/Content';
 import Sidebar from '@components/Sidebar';
 import Profile from '@components/home/Profile';
-import Timeline from '@components/home/Timeline'
 
 // Redux
 import { useDispatch } from 'react-redux';
@@ -33,7 +32,6 @@ const Home = () => {
         children = {
           <>
             <Profile />
-            <Timeline />
           </>
         }
         />

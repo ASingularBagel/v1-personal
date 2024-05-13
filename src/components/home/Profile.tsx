@@ -1,6 +1,3 @@
-// Icons
-import { FaArrowDown } from "react-icons/fa";
-
 const Profile = () => {
   return (
     <div className='relative mb-52'>
@@ -18,13 +15,12 @@ const Profile = () => {
           </div>
         </div>
         <div className='mt-10 break-words inline-flex flex-wrap text-xl'>
-            <p className=''>Feel free to check out my professional and educational experience down below, or navigate to my projects page to see what I've been working on.</p>
+            <p className=''>Feel free to check out my professional and educational experience down below (currently building, view resume for this information), or navigate to my projects page to see what I've been working on.</p>
         </div>
         <div className='absolute left-1/2 flex flex-col gap-4 my-16 -translate-x-[20px] items-center justify-center cursor-pointer'
           onClick={() => {
             document.getElementById('timeline')?.scrollIntoView({behavior: 'smooth'})
           }}>
-          <p className='text-white text-2xl animate-bounce cursor-pointer w-min'><FaArrowDown /></p>
         </div>
     </div>
   );

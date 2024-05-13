@@ -2,6 +2,7 @@ import { useState } from 'react';
 
 import { Link } from 'react-router-dom'
 import Sticky from 'react-stickynode'
+import resume from '@root/content/resume.pdf'
 
 // Icons
 import { HiOutlineArrowUpRight } from "react-icons/hi2";
@@ -27,21 +28,27 @@ const Sidebar = () => {
                   Projects
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link className={isHovered ? 'opacity-50 hover:opacity-100' : ''} to={'/blog'}>
                   Blog
                 </Link>
-              </li>
+              </li> */}
               <li>
-                <Link className={isHovered ? 'opacity-50 hover:opacity-100' : ''} to={'/'}>
-                  Resume
-                </Link>
+              <a 
+                className={isHovered ? 'opacity-50 hover:opacity-100' : ''} 
+                href={resume} 
+                target='_blank' 
+                rel='noreferrer'
+              >
+                <p className='inline-flex'>Resume<HiOutlineArrowUpRight /></p>
+              </a>
               </li>
               <li>
                 <Link
                 className={isHovered ? 'opacity-50 hover:opacity-100' : ''}
                 to={'https://github.com/ASingularBagel'}
-                target='_blank' rel='noreferrer'
+                target='_blank' 
+                rel='noreferrer'
                 >
                 <p className='inline-flex'>Github <HiOutlineArrowUpRight /></p>
                 </Link>

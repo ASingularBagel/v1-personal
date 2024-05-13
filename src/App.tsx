@@ -22,7 +22,7 @@ function App() {
   const bgColor = useSelector((state: RootState) => state.theme.bgColor);
 
   const colorMap: { [key: string]: string } = {
-    'stone-950': 'bg-transparent',
+    'stone-950': 'bg-stone-950',
     'teal-950': 'bg-teal-950',
     'cyan-950': 'bg-cyan-950',
     'orange-50': 'bg-orange-50',
