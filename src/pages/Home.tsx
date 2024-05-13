@@ -5,7 +5,6 @@ import Content from '@components/Content';
 import Sidebar from '@components/Sidebar';
 import Profile from '@components/home/Profile';
 import Timeline from '@components/home/Timeline'
-import Background from '@components/home/Background';
 
 // Redux
 import { useDispatch } from 'react-redux';
@@ -28,7 +27,6 @@ const Home = () => {
   return (
     <div className={`h-max relative`}>
       <div className='fixed top-0'>
-      <Background />
       </div>
         <Sidebar />
         <Content 
