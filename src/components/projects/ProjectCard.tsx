@@ -44,9 +44,10 @@ dayjs.extend(relativeTime)
                         {githubUrls && githubUrls[1] && <Link to={githubUrls[1]} style={{ textDecoration: 'underline', marginBottom: '2rem'}} target='_blank'>Backend</Link>}
                     </div>
                 </div>
-{/*                 <div className='lg:col-span-1'>
-                    SAMPLE
-                </div> */}
+                <div className='lg:col-span-1'>
+                    <p>Status: </p> {project.status}
+                    <p>Start date: </p> {dayjs(project.startDate).fromNow()}
+                </div>
             </div>
         </div>
     </div>
