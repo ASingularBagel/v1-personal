@@ -45,8 +45,8 @@ dayjs.extend(relativeTime)
                     </div>
                 </div>
                 <div className='lg:col-span-1'>
-                    <p>Status: </p> {project.status}
-                    <p>Start date: </p> {dayjs(project.startDate).fromNow()}
+                    <p className='inline-flex'>Status: {project.status}</p> 
+                    <p className='inline-flex'>Start date: {dayjs(project.startDate).format('MM/YYYY')}</p> 
                 </div>
             </div>
         </div>
